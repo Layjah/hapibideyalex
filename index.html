@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Bday Skibidirizzsigma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Include Poppins font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Happy Birthday Alex</h1>
+    </div>
+
+    <div class="content">
+        <div class="letter">
+            <h2>Your Birthday Message</h2>
+            <p id="bdayMSG"></p>
+        </div>
+
+        <div>
+            <h2 class="listen-text">Listen to meee</h2>
+        </div>
+
+        <button class="button" onclick="toggleAudio(event)">Click me :></button>
+
+        <div class="audio" style="display: none;">
+            <audio id="voiceAudio" preload="auto">
+                <source src="Pibidey alex.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <div class="audio-controls">
+                <button id="playButton" class="control-button" onclick="playAudio()">Play</button>
+                <button id="pauseButton" class="control-button" onclick="pauseAudio()">Pause</button>
+                <input type="range" id="seekBar" value="0" class="seek-bar" onchange="setAudioTime()">
+                <span id="timeLabel" class="time-label">0:00 / 0:00</span>
+                <button id="volumeButton" class="control-button" onclick="toggleVolume()">
+                    <i id="volumeIcon" class="fas fa-volume-up"></i>
+                </button>
+                <input type="range" id="volumeSlider" value="100" class="volume-slider" onchange="setVolume()" />
+            </div>
+        </div>
+
+        <div>
+            <h2>You're beautiful, always:</h2>
+        </div>
+
+        <div class="gallery">
+            <div class="frame">
+                <img src="picture1.jpg" alt="Memory 1">
+            </div>
+            <div class="frame">
+                <img src="picture2.jpg" alt="Memory 2">
+            </div>
+            <div class="frame">
+                <img src="picture3.jpg" alt="Memory 3">
+            </div>
+            <div class="frame">
+                <img src="picture4.jpg" alt="Memory 4">
+            </div>
+            <div class="frame">
+                <img src="picture5.jpg" alt="Memory 5">
+            </div>
+        </div>
+
+        <div class="background-music">
+            <audio id="bgMusic" autoplay loop preload="auto">
+                <source src="BGMUSIC.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <div class="mute-icon" onclick="toggleBgMusic()">
+                <i id="bgMusicIcon" class="fas fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

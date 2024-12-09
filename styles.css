@@ -1,0 +1,192 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5;
+    color: #3e0f63;
+    line-height: 1.6;
+}
+
+.hero {
+    background: url('6145343429249449983.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(62, 15, 99, 0.5);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    z-index: 1;
+    animation: fadeIn 2s;
+}
+
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.letter {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s;
+}
+
+.letter h2 {
+    margin-bottom: 20px;
+}
+
+.listen-text {
+    margin: 20px 0 -2px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 20px 0 10px;
+    background-color: #3e0f63;
+    color: white;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.button:hover {
+    background-color: #5e27a3;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.audio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.control-button {
+    background-color: #3e0f63;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.control-button:hover {
+    background-color: #5e27a3;
+    transform: scale(1.05);
+}
+
+.seek-bar {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.time-label {
+    margin-left: 10px;
+}
+
+.volume-slider {
+    width: 100px;
+    margin-left: 20px; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%; 
+    max-width: 275px; 
+    height: auto;
+    border-radius: 20px; 
+    margin: 10px; 
+    opacity: 0.8; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    opacity: 1; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.gallery .frame {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 275px; 
+    height: 365px; 
+    overflow: hidden; 
+    border-radius: 20px; 
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.background-music {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px; 
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+}
+
+.mute-icon {
+    cursor: pointer; 
+}
+
+.mute-icon i {
+    font-size: 1.5rem; 
+    color: #3e0f63;
+    transition: color 0.3s; 
+}
+
+.mute-icon:hover i {
+    color: #5e27a3; 
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
